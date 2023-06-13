@@ -1,0 +1,40 @@
+.home-btn-container {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.home-btn {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+}
+
+.home-btn:hover {
+    animation: animate 1.5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0  rgba(255, 255, 255, 0);
+    }
+                            
+}

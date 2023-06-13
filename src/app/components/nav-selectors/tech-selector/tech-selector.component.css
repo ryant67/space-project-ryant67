@@ -1,0 +1,34 @@
+.tech-sel-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tech-sel-item {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+.tech-sel-item:hover {
+    filter: brightness(150%);
+}
+
+.tech-sel-item.active {
+    filter: brightness(100%);
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}

@@ -1,0 +1,35 @@
+<div class="mobile-nav-container">
+  <img
+    class="mobile-nav-icon"
+    src="../../../../assets/shared/logo.svg"
+    alt="Icon"
+  />
+  <img
+    class="mobile-menu-icon"
+    (click)="menuClick()"
+    src="../../../../assets/shared/icon-hamburger.svg"
+    alt="Menu Icon"
+  />
+  <div class="mobile-menu-dropdownContainer" *ngIf="menu === true">
+    <img
+      class="mobile-menu-dropdownIcon"
+      (click)="closeClick()"
+      src="../../../../assets/shared/icon-close.svg"
+      alt="Exit Icon"
+    />
+    <ul class="mobile-menu-dropdownList">
+      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+        <span>00 </span>HOME
+      </li>
+      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+        <span>01 </span>DESTINATION
+      </li>
+      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+        <span>02 </span>CREW
+      </li>
+      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+        <span>03 </span>TECHNOLOGY
+      </li>
+    </ul>
+  </div>
+</div>

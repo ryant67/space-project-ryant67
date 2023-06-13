@@ -1,0 +1,441 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* **--------- Home styling start ---------** */
+.home-container {
+    position: fixed;
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover no-repeat center;
+}
+
+.home-contents {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    height: 325px;
+}
+
+.home-info {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: default;
+}
+
+.home-subHeader {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    color: #D0D6F9;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.home-header {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: white;
+}
+
+.home-desc {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    line-height: 28px;
+    letter-spacing: 1px;
+    width: 75%;
+}
+
+.home-btn-block {
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+/* **---------- Home styling end ----------** */
+
+/* **----- Destinations styling start -----** */
+.planet-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-container {
+    margin: 50px auto;
+}
+
+.space-option {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    width: 85%;
+    margin: 100px auto;
+    color: white;
+    cursor: default;
+}
+
+.space-option span {
+    opacity: .4;
+    margin-right: 10px;
+}
+
+.planet-info {
+    display: flex;
+    cursor: default;
+}
+
+.planet-img {
+    margin: 0 175px;
+    height: 400px;
+    width: 400px;
+}
+
+.planet-contents {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 400px;
+}
+
+.planet-nav-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.planet-name {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    color: white;
+}
+
+.planet-desc {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #D0D6F9;
+    width: 80%;
+}
+
+.planet-divider {
+    margin: 0;
+    width: 80%;
+    border: .5px solid white;
+    opacity: .3;
+}
+
+.planet-calc {
+    margin: 20px 0;
+    display: flex;
+}
+
+.planet-dist {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    width: 40%;
+    color: white;
+}
+
+.planet-dist span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    color: #D0D6F9;
+}
+
+.planet-travel {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    width: 40%;
+    color: white;
+}
+
+.planet-travel span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    color: #D0D6F9;
+}
+/* **------ Destinations styling end ------** */
+
+/* **--------- Crew styling start ---------** */
+.crew-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+    background-size: cover no-repeat center;
+}
+
+.crew-contents {
+    width: 85%;
+    height: 475px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.crew-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.crew-role {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    opacity: .5;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.crew-name {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.crew-bio {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    width: 75%;
+}
+
+.crew-nav {
+    position: absolute;
+    bottom: 100px;
+    width: 35%;
+    margin-top: 50px;
+}
+
+.crew-img-container {
+    position: fixed;
+    bottom: 0;
+    right: 175px;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.crew-img {
+    height: 650px;
+    width: 500px;
+}
+/* **---------- Crew styling end ----------** */
+
+/* **--------- Tech styling start ---------** */
+.tech-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+    background-size: cover no-repeat center;
+}
+
+.tech-info {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.tech-nav {
+    margin-left: 100px;
+    height: 400px;
+    width: 9%;
+}
+
+.tech-contents {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 400px;
+    cursor: default;
+}
+
+.tech-subHeader {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: #D0D6F9;
+    margin: 10px 0;
+}
+
+.tech-name {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+    color: white;
+}
+
+.tech-desc {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    width: 71%;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 20px 0 0 10px;
+}
+
+.tech-img-container {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+.tech-img {
+    width: 550px;
+    height: 500px;
+}
+/* **---------- Tech styling end ----------** */
+
+/* **------ Tablet Breakpoint Start -------** */
+@media (width: 768px) {
+    .home-container {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+        background-size: cover no-repeat center;
+    }
+    .nav-container {
+        margin: 0 auto;
+    }
+    .home-contents {
+        flex-direction: column;
+        width: 90%;
+        margin: 100px auto;
+    }
+    .home-info {
+        width: 100%;
+    }
+    .home-subHeader {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .home-header {
+        width: 100%;
+        text-align: center;
+    }
+    .home-desc {
+        margin: 25px auto;
+        font-size: 16px;
+        width: 60%;
+        text-align: center;
+    }
+    .home-btn-block {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .space-option {
+        margin: 50px auto 70px auto;
+    }
+    .planet-container {
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+        background-size: cover no-repeat center;
+    }
+    .planet-info {
+        width: 100%;
+        flex-direction: column;
+    }
+    .planet-img-container {
+        display: flex;
+        justify-content: center;
+    }
+    .planet-img {
+        margin: 0;
+        height: 275px;
+        width: 275px;
+    }
+    .planet-contents {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .dest-sel-list {
+        width: 280px;
+    }
+    .planet-nav-block {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .planet-name {
+        margin: 20px auto;
+    }
+    .planet-desc {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .planet-calc {
+        text-align: center;
+        width: 100%;
+        justify-content: space-around;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+    .crew-container {
+        background-image: url('./assets/crew/background-crew-tablet.jpg');
+            background-size: cover no-repeat center;
+    }
+    .crew-contents {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .crew-info {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .crew-role {
+        font-size: 24px;
+    }
+    .crew-name {
+        font-size: 40px;
+    }
+    .crew-bio {
+        font-size: 16px;
+        width: 63%;
+        margin: 0 auto;
+    }
+    .crew-nav {
+        position: relative;
+        top: -20px;
+        left: 40%;
+        width: 70%;
+    }
+    .crew-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .crew-img {
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+        width: 500px;
+        height: 500px;
+    }
+}
+/* **------- Tablet Breakpoint End --------** */

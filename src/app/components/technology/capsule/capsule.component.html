@@ -1,0 +1,23 @@
+<div class="tech-container">
+  <div class="nav-container">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="space-option"><span>03 </span>SPACE LAUNCH 101</div>
+  <div class="tech-info" *ngFor="let tech of capsuleTech">
+    <div class="tech-nav">
+      <app-tech-selector></app-tech-selector>
+    </div>
+    <div class="tech-contents">
+      <div class="tech-subHeader">THE TERMINOLOGY..</div>
+      <div class="tech-name">{{ tech.name }}</div>
+      <div class="tech-desc">{{ tech.description }}</div>
+    </div>
+    <div class="tech-img-container">
+      <img
+        class="tech-img"
+        [src]="tech.images['portrait']"
+        alt="Technology Image"
+      />
+    </div>
+  </div>
+</div>

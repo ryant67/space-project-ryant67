@@ -1,0 +1,27 @@
+<div class="nav-bar-container">
+  <img
+    class="nav-bar-icon"
+    src="../../../../assets/shared/logo.svg"
+    alt="Icon"
+  />
+  <hr class="nav-bar-divider" />
+  <ul class="nav-bar-list">
+    <li
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active"
+      routerLink="/"
+      class="nav-bar-listItem"
+    >
+      <span>00 </span>HOME
+    </li>
+    <li routerLinkActive="active" routerLink="/dest" class="nav-bar-listItem">
+      <span>01 </span>DESTINATION
+    </li>
+    <li routerLinkActive="active" routerLink="/crew" class="nav-bar-listItem">
+      <span>02 </span>CREW
+    </li>
+    <li routerLinkActive="active" routerLink="/tech" class="nav-bar-listItem">
+      <span>03 </span>TECHNOLOGY
+    </li>
+  </ul>
+</div>

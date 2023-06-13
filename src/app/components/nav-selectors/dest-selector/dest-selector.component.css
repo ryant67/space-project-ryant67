@@ -1,0 +1,35 @@
+.dest-sel-container {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 40px;
+}
+
+.dest-sel-list {
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    color: #D0D6F9;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dest-sel-listItem {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    height: 38px;
+}
+
+.dest-sel-listItem:hover {
+    filter: brightness(150%);
+    border-bottom: 2px solid white;
+}
+
+.dest-sel-listItem.active {
+    color: white;
+    height: 38px;
+    border-bottom: 2px solid white;
+}

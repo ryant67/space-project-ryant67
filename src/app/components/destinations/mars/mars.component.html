@@ -1,0 +1,33 @@
+<div class="planet-container">
+  <div class="nav-container">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="space-option"><span>01 </span> PICK YOUR DESTINATION</div>
+  <div class="planet-info" *ngFor="let destination of marsDest">
+    <div class="planet-img-container">
+      <img
+        class="planet-img"
+        [src]="destination.images['png']"
+        alt="Planet Image"
+      />
+    </div>
+    <div class="planet-contents">
+      <div class="planet-nav-block">
+        <app-dest-selector></app-dest-selector>
+        <div class="planet-name">{{ destination.name }}</div>
+        <div class="planet-desc">{{ destination.description }}</div>
+        <hr class="planet-divider" />
+      </div>
+      <div class="planet-calc">
+        <div class="planet-dist">
+          <span>AVG. DISTANCE</span><br />
+          {{ destination.distance }}
+        </div>
+        <div class="planet-travel">
+          <span>EST. TRAVEL TIME</span><br />
+          {{ destination.travel }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

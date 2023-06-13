@@ -1,0 +1,19 @@
+<div class="crew-container">
+  <div class="nav-container">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="space-option"><span>02 </span> MEET YOUR CREW</div>
+  <div class="crew-contents" *ngFor="let crew of anoushehMem">
+    <div class="crew-info">
+      <div class="crew-role">{{ crew.role }}</div>
+      <div class="crew-name">{{ crew.name }}</div>
+      <div class="crew-bio">{{ crew.bio }}</div>
+      <div class="crew-nav">
+        <app-crew-selector></app-crew-selector>
+      </div>
+    </div>
+    <div class="crew-img-container">
+      <img class="crew-img" [src]="crew.images['png']" alt="Crew Image" />
+    </div>
+  </div>
+</div>
