@@ -27,6 +27,7 @@
 }
 
 .tech-sel-item.active {
+    z-index: -1;
     filter: brightness(100%);
     background-color: white;
     border: 1px solid black;
@@ -37,5 +38,15 @@
     .tech-sel-container {
         flex-direction: row;
         height: 80px;
+    }
+}
+@media (width: 425px) {
+    .tech-sel-container {
+        flex-direction: row;
+        height: 65px;
+    }
+    .tech-sel-item {
+        height: 60px;
+        width: 60px;
     }
 }

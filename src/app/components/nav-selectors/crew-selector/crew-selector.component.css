@@ -27,3 +27,9 @@
 .crew-sel-item.active {
     background-color: white;
 }
+
+@media (width: 425px) {
+    .crew-sel-container {
+        width: 90%;
+    }
+}

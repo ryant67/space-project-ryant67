@@ -196,10 +196,11 @@ body {
 .crew-info {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 80%;
 }
 
 .crew-role {
+    z-index: -1;
     font-family: 'Bellefair', serif;
     font-size: 32px;
     opacity: .5;
@@ -220,7 +221,7 @@ body {
     color: #D0D6F9;
     margin-bottom: 50px;
     letter-spacing: 1px;
-    width: 75%;
+    width: 45%;
 }
 
 .crew-nav {
@@ -531,10 +532,12 @@ body {
         margin: 20px 0;
     }
     .space-option {
-        margin: 50px auto 70px auto;
+        width: 100%;
+        text-align: center;
+        margin: 30px auto;
     }
     .planet-container {
-        background-image: url('./assets/destination/background-destination-tablet.jpg');
+        background-image: url('./assets/destination/background-destination-mobile.jpg');
     }
     .planet-info {
         width: 100%;
@@ -546,8 +549,8 @@ body {
     }
     .planet-img {
         margin: 0;
-        height: 275px;
-        width: 275px;
+        height: 200px;
+        width: 200px;
     }
     .planet-contents {
         width: 75%;
@@ -566,19 +569,123 @@ body {
         text-align: center;
     }
     .planet-name {
-        margin: 20px auto;
+        font-size: 56px;
+        letter-spacing: 5px;
+        margin: 10px auto;
     }
     .planet-desc {
+        font-size: 15px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+    }
+    .planet-divider {
+        z-index: -1;
+        width: 100%;
     }
     .planet-calc {
         text-align: center;
         width: 100%;
-        justify-content: space-around;
+        flex-direction: column;
         letter-spacing: 1px;
         word-spacing: 5px;
+    }
+    .planet-dist {
+        width: 100%;
+    }
+    .planet-travel {
+        width: 100%;
+    }
+    .crew-container {
+        background-image: url('./assets/crew/background-crew-mobile.jpg');
+    }
+    .crew-img-container {
+        z-index: -1;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 5%;
+        top: 180px;
+        height: 250px;
+        width: 90%;
+        border-bottom: .01px solid lightgray;
+    }
+    .crew-img {
+        height: 250px;
+        width: 225px;
+    }
+    .crew-contents {
+        width: 100%;
+        height: auto;
+        margin-top: 400px;
+    }
+    .crew-info {
+        width: 100%;
+        text-align: center;
+    }
+    .crew-role {
+        font-size: 16px;
+    }
+    .crew-name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .crew-bio {
+        font-size: 15px;
+        margin: 0 auto;
+        width: 80%;
+        letter-spacing: 2px;
+        line-height: 24px;
+    }
+    .crew-sel-container {
+        z-index: -1;
+        position: absolute;
+        top: -300px;
+        left: 150px;
+    }
+    .tech-container {
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+    }
+    .tech-img-container {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .tech-landscape-imgContainer {
+        visibility: visible;
+    }
+    .tech-landscape-img {
+        width: 425px;
+    }
+    .tech-info {
+        flex-direction: column;
+    }
+    .tech-nav {
+        height: 60px;
+        width: 60%;
+        margin: 220px auto 30px auto;
+    }
+    .tech-contents {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tech-subHeader {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .tech-name {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .tech-desc {
+        font-size: 15px;
+        margin: 10px auto;
+        width: 80%;
+        line-height: 30px;
+        letter-spacing: 1px;
     }
 }
 /* **------- Mobile Breakpoint End --------** */
