@@ -38,3 +38,12 @@
     }
                             
 }
+
+@media (width: 425px) {
+    .home-btn {
+        width: 175px;
+        height: 175px;
+        line-height: 175px;
+        font-size: 20px;
+    }
+}

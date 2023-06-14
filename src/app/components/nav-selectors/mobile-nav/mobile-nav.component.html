@@ -18,16 +18,32 @@
       alt="Exit Icon"
     />
     <ul class="mobile-menu-dropdownList">
-      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+      <li
+        routerLink="/"
+        class="mobile-menu-dropdownItem"
+        (click)="navigateClick()"
+      >
         <span>00 </span>HOME
       </li>
-      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+      <li
+        routerLink="/dest"
+        class="mobile-menu-dropdownItem"
+        (click)="navigateClick()"
+      >
         <span>01 </span>DESTINATION
       </li>
-      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+      <li
+        routerLink="/crew"
+        class="mobile-menu-dropdownItem"
+        (click)="navigateClick()"
+      >
         <span>02 </span>CREW
       </li>
-      <li class="mobile-menu-dropdownItem" (click)="navigateClick()">
+      <li
+        routerLink="/tech"
+        class="mobile-menu-dropdownItem"
+        (click)="navigateClick()"
+      >
         <span>03 </span>TECHNOLOGY
       </li>
     </ul>

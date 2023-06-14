@@ -11,7 +11,14 @@ body {
     background-image: url('./assets/home/background-home-desktop.jpg');
     width: 100vw;
     height: 100vh;
-    background-size: cover no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mobile-nav-container {
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 .home-contents {
@@ -175,7 +182,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url('./assets/crew/background-crew-desktop.jpg');
-    background-size: cover no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .crew-contents {
@@ -243,7 +251,8 @@ body {
     width: 100vw;
     height: 100vh;
     background-image: url('./assets/technology/background-technology-desktop.jpg');
-    background-size: cover no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .tech-info {
@@ -312,7 +321,6 @@ body {
 @media (width: 768px) {
     .home-container {
         background-image: url('./assets/home/background-home-tablet.jpg');
-        background-size: cover no-repeat center;
     }
     .nav-container {
         margin: 0 auto;
@@ -352,7 +360,6 @@ body {
     }
     .planet-container {
         background-image: url('./assets/destination/background-destination-tablet.jpg');
-        background-size: cover no-repeat center;
     }
     .planet-info {
         width: 100%;
@@ -400,7 +407,6 @@ body {
     }
     .crew-container {
         background-image: url('./assets/crew/background-crew-tablet.jpg');
-        background-size: cover no-repeat center;
     }
     .crew-contents {
         flex-direction: column;
@@ -445,7 +451,6 @@ body {
     }
     .tech-container {
         background-image: url('./assets/technology/background-technology-tablet.jpg');
-        background-size: cover no-repeat center;
     }
     .tech-img-container {
         visibility: hidden;
@@ -476,3 +481,104 @@ body {
     }
 }
 /* **------- Tablet Breakpoint End --------** */
+
+/* **------ Mobile Breakpoint Start -------** */
+@media (width: 425px) {
+    .home-container {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+    }
+    .home-contents {
+        flex-direction: column;
+        width: 100%;
+        margin: 75px auto;
+    }
+    .home-info {
+        width: 100%;
+    }
+    .home-subHeader {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .home-header {
+        font-size: 80px;
+        width: 100%;
+        text-align: center;
+    }
+    .home-desc {
+        margin: 40px auto;
+        font-size: 15px;
+        width: 85%;
+        text-align: center;
+        line-height: 28px;
+        letter-spacing: 2px;
+    }
+    .home-btn-block {
+        width: 100%;
+        height: 300px;
+        justify-content: center;
+        margin-top: 125px;
+    }
+    .nav-container {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .mobile-nav-container {
+        visibility: visible;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .space-option {
+        margin: 50px auto 70px auto;
+    }
+    .planet-container {
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
+    }
+    .planet-info {
+        width: 100%;
+        flex-direction: column;
+    }
+    .planet-img-container {
+        display: flex;
+        justify-content: center;
+    }
+    .planet-img {
+        margin: 0;
+        height: 275px;
+        width: 275px;
+    }
+    .planet-contents {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .dest-sel-list {
+        width: 280px;
+    }
+    .planet-nav-block {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .planet-name {
+        margin: 20px auto;
+    }
+    .planet-desc {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .planet-calc {
+        text-align: center;
+        width: 100%;
+        justify-content: space-around;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+}
+/* **------- Mobile Breakpoint End --------** */
