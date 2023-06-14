@@ -1,9 +1,16 @@
-<div class="tech-container">
+<div class="tech-container" id="tech-container">
   <div class="nav-container">
     <app-nav-bar></app-nav-bar>
   </div>
   <div class="space-option"><span>03 </span>SPACE LAUNCH 101</div>
   <div class="tech-info" *ngFor="let tech of vehicleTech">
+    <div class="tech-landscape-imgContainer">
+      <img
+        class="tech-landscape-img"
+        [src]="tech.images['landscape']"
+        alt="Technology Image"
+      />
+    </div>
     <div class="tech-nav">
       <app-tech-selector></app-tech-selector>
     </div>

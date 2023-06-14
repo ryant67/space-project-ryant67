@@ -12,7 +12,7 @@ export class VehicleComponent {
   vehicleTech: Technology[] = [];
 
   constructor(private techService: TechnologiesService) { }
-  
+
   ngOnInit(): void {
     this.techService.getTechnologies().subscribe((technology) => {
       this.technology = technology;
